@@ -1,0 +1,52 @@
+version: "1"
+services:
+  cache:
+    image: redis
+    ports:
+      - 6379:${REDIS_PORT}
+    restart: always
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+    ports:
+      - 5432:${DB_PORT}
+    volumes:
+      - ./seed/seed.sql:/docker-entrypoint-initdb.d/seed.sql
+  cv:
+    build: ./CV
+    ports:
+      - 8000:${CV_PORT}
+    env_file:
+      - .env
+    restart: always
+    volumes:
+      - shared_volume:/usr/app/Datasets
+  app:
+    build: ./
+    ports:
+      - 3000:${API_PORT}
+    depends_on:
+      - db
+      - cv
+      - cache
+    env_file:
+      - .env
+    environment:
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+      DB_HOST: db
+      DB_PORT: ${DB_PORT}
+      REDIS_HOST: cache
+      REDIS_PORT: ${REDIS_PORT}
+    volumes:
+      - shared_volume:/usr/app/Datasets
+
+volumes:
+  shared_volume:
