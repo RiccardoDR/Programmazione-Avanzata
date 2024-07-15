@@ -69,16 +69,16 @@ Di seguito vengono riportati i diagrammi UML:
 - Sequence Diagram
 
 ![usecase](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/Use%20case%20diagram-2.png)
-![POSTcreateDataset](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/create.png)
-![POSTdeleteDataset](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/delete.png)
-![POSTdatasets](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/datasets.png)
-![POSTupdateDataset](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/update.png)
-![POSTupload](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/upload.png)
-![POSTinference](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/inference.png)
-![POSTjob](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/job.png)
-![POSTresults](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/results.png)
-![POSTtokens](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/tokens.png)
-![POSTrecharge](https://github.com/RiccardoDR/ProgrammazioneAvanzata_2024/blob/main/resources/recharge.png)
+![POSTcreateDataset](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/create.png)
+![POSTdeleteDataset](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/delete.png)
+![POSTdatasets](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/datasets.png)
+![POSTupdateDataset](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/update.png)
+![POSTupload](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/upload.png)
+![POSTinference](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/inference.png)
+![POSTjob](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/job.png)
+![POSTresults](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/results.png)
+![POSTtokens](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/tokens.png)
+![POSTrecharge](https://github.com/RiccardoDR/Programmazione-Avanzata/blob/main/resources/recharge.png)
 
 ## Esempi di Chiamate API
 
